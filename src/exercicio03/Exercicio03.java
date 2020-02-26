@@ -69,7 +69,7 @@ public class Exercicio03 {
     private static void imprimeListaDeProdutosDoSite(List<Produto> produtos) {
         System.out.println("Lista de Preços dos Produtos do Site:");
         for(Produto produto : produtos) {
-            System.out.println(produto.getId()+"|"+produto.getNome()+": Preço de Venda DE "+produto.getPreco()+ " POR "+produto.getPrecoPromocao());
+            System.out.println(produto.getCodigoID()+"|"+produto.getNome()+": Preço de Venda DE "+produto.getPrecoVenda()+ " POR "+produto.getDescontoSite());
         }
     }
 

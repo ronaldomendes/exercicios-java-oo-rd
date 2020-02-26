@@ -21,7 +21,15 @@ public class Fibonacci {
      */
     public int[] getSequenciaFibonacciDe(int tamanho) {
         // TODO: implemente o código deste método
-        return null;
+        int[] a = new int[tamanho];
+
+        int b = 1, c = 0;
+        for (int i = 0; i < tamanho; i++) {
+            a[i] = b + c;
+            b = c;
+            c = a[i];
+        }
+        return a;
     }
 
 }

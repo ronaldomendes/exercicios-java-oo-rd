@@ -20,7 +20,12 @@ public class NumeroPrimo {
      */
     public Set<Integer> getNumerosPrimosDe(Set<Integer> numeros) {
         // TODO: implemente o código deste método
-        return null;
+        for (Integer numero: numeros) {
+            if (numero % 2 == 0 && numero / numero == 0) {
+                System.out.println(numero);
+            }
+        }
+        return numeros;
     }
 
 }
