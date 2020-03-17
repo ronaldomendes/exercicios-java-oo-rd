@@ -30,6 +30,6 @@ public class TecnicoManutencao extends Funcionario {
 
     @Override
     public double salarioAnual() {
-        return super.salarioAnual() * (insalubridade / 100) + bonusAnual;
+        return super.salarioAnual() * (insalubridade / 100 + 1) + bonusAnual;
     }
 }
